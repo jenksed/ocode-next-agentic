@@ -61,6 +61,8 @@ across multiple features exists. Avoid premature extraction into `lib/` or
 - No unrelated refactors, reorganization, speculative abstraction, or
   dependencies added "for later."
 - Every change must pass `pnpm verify`.
+- Do not manually edit generated or tool-owned files (e.g., `next-env.d.ts`).
+  Regenerate from the authoritative source instead.
 
 ## 7. Completion
 
