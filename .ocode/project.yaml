@@ -1,0 +1,29 @@
+schema: 1
+
+project:
+  type: next-agentic
+  blueprint: next-agentic
+  blueprint_version: 0.1.0
+
+runtime:
+  language: typescript
+  framework: nextjs
+  package_manager: pnpm
+
+paths:
+  app: src/app
+  features: src/features
+  ui: src/components/ui
+  composites: src/components/composites
+  library: src/lib
+
+commands:
+  install: pnpm install --frozen-lockfile
+  dev: pnpm dev
+  lint: pnpm lint
+  typecheck: pnpm typecheck
+  build: pnpm build
+  verify: pnpm verify
+
+agent:
+  instructions: AGENTS.md
